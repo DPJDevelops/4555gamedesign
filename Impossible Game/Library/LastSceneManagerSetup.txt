@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Scenes/CLASS PROY.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
