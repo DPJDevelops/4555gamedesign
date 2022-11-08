@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Music
+  - Blade
   layers:
   - Default
   - TransparentFX

@@ -12,10 +12,12 @@ public class playerMovement : MonoBehaviour
     public bool moveLeft;
     public bool jump;
      public Vector3 startPos;
+     Animator anim;
 
     // Checking for user input and store inside varables 
     public void Update()
     {
+        
         if (Input.GetKey("a"))
         {
             moveLeft = true;
@@ -23,7 +25,7 @@ public class playerMovement : MonoBehaviour
         }
         else if (Input.GetKey("space"))
         {
-            jump = true;
+            anim.SetTrigger("Slash");
         }
         else if (Input.GetKey("d"))
         {
@@ -61,8 +63,9 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    void Awake(){
-        startPos = transform.position;
+    void Start(){
+        anim = GetComponentInChildren<Animator>(); 
+
     }
     
 }
